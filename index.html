@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Air Defense Patiala Admission Form</h1>
+        <p>Enter your details and submit this form. </p>
+        <form action="/" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <span class="error"><?php echo $nameErr;?></span>
+            <input type="text" name="age" id="age" placeholder="Enter your Age">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <input type="text" name="dob" id="dob" placeholder="Date of Birth" onfocus="(this.type='date')" onblur="(this.type='date')">
+            <div class="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </div>
+            <div class="height">
+                <label for="height">Height: </label><br>
+                <select class="height" id="height">
+                    <option value="">--- Select your height ---</option>
+                    <option value="5'5">5'5</option>
+                    <option value="5'6">5'6</option>
+                    <option value="5'7">5'7</option>
+                    <option value="5'8">5'8</option>
+                    <option value="5'9">5'9</option>
+                    <option value="5'10">5'10</option>
+                    <option value="5'11">5'11</option>
+                    <option value="5'12">5'12</option>
+                    <option value="6'1">6'1</option>
+                    <option value="6'2">6'2</option>
+                </select>
+            </div>
+            <div class="idproof">
+                <label for="idproof">Enter government id proof</label>
+                <input type="file" id="idproof" name="idproof">
+            </div>
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Why you want to join Air Force?"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+
+
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
